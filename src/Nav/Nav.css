@@ -1,0 +1,98 @@
+nav {
+    display: block;
+    width: 100%;
+    clear: both;
+    position: fixed;
+    bottom: calc(5vh + 8px);
+}
+
+nav ul {
+    padding: 0;
+    margin: 0 10px;
+}
+
+nav li {
+    display: inline;
+    background-color: #e9ecca;
+    padding: 5px 10px;
+    margin: 0 10px;
+    color: #30603b;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+nav li:hover {
+    padding: 5px 15px;
+    font-size: 25px;
+}
+
+nav a:focus {
+    padding: 5px 15px;
+    font-size: 25px;
+}
+
+nav li:hover::before,
+nav a:focus::before {
+    background-color: #e9ecca;
+}
+
+nav li:hover::after,
+nav a:focus::after {
+    background-color: #e9ecca;
+}
+
+nav li::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #e9ecca;
+    left: -10px;
+    bottom: 0;
+    border-radius: 100% 0 0 0;
+    transition: all 0.5s ease;
+}
+
+nav li::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #e9ecca;
+    right: -10px;
+    bottom: 0;
+    border-radius: 0 100% 0 0;
+    transition: all 0.5s ease;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 500px) {
+    nav li {
+        font-size: 0.9rem;
+    }
+    nav li:hover, nav a:hover {
+        font-size: 1.1rem;
+    }
+    nav ul {
+        margin: 0;
+    }
+    nav li:focus, nav a:focus {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    nav li:hover, nav a:hover {
+        padding: 10px 5px;
+        font-size: 1rem;
+    }
+    nav li:focus, nav a:focus {
+        padding: 10px 5px;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,73 @@
+header {
+    background-color: #e9ecca;
+    padding: 25px;
+    color: #42ab9e;
+    text-align: left;
+    display: inline;
+    position: fixed;
+    width: calc(95% - 20px);
+    max-width: 1465px;
+    z-index: 99;
+}
+
+header a {
+    color: #42ab9e;
+    text-decoration: none;
+    font-size: 30px;
+    text-transform: lowercase;
+}
+
+h1 {
+    font-family: 'Judson', serif;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+header img {
+    width: 70px;
+    display: inline-block;
+    float: left;
+}
+
+@media only screen and (max-width: 600px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    header img {
+        width: 50px;
+        padding-top: 5px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    header img {
+        width: 45px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    header img {
+        width: 35px;
+        padding-top: 0;
+    }
+    header {
+        padding: 10px;
+    }
+}
+.skipLink {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: #FFF;
+  color: #000; }
+
+.skipLink:focus {
+  left: 0; }

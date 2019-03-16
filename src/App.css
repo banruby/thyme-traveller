@@ -1,0 +1,27 @@
+.App {
+  background: linear-gradient(0deg, rgba(67,172,159,0.7), rgba(67,172,159, 0.4)), url(assets/map.jpg) center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 1px;
+}
+
+.window {
+    width: 95%;
+    max-width: 1480px;
+    height: calc(95vh - 20px);
+    margin: 2.5vh auto;
+    border: 10px solid #e9ecca;
+    overflow-y: auto;
+    position: relative;
+}
+
+main {
+  padding: 120px 0 50px 0;
+}
+
+@media only screen and (max-width: 425px) {
+  main {
+    padding-top: 40px;
+  }
+}

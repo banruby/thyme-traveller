@@ -1,0 +1,14 @@
+.placeholder {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.placeholder span:before {
+    display: inline-block;
+    margin: 0 20px 8px 0;
+    height: 3px;
+    content: " ";
+    text-shadow: none;
+    background-color: #30603b;
+    width: 100%;
+}
